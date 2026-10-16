@@ -1,0 +1,32 @@
+name: fieldtask_pro
+description: Application terrain offline-first pour les techniciens TechFix.
+publish_to: none
+version: 1.0.0+1
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^9.1.1
+  go_router: ^18.0.2
+  get_it: ^9.3.0
+  dio: ^5.9.0
+  sqflite: ^2.4.4+1
+  path: ^1.9.1
+  path_provider: ^2.1.6
+  connectivity_plus: 7.3.1
+  uuid: ^4.6.0
+  flutter_map: ^8.3.2
+  latlong2: ^0.9.1
+  geolocator: ^14.1.1
+  image_picker: ^1.2.4
+  signature: ^6.4.0
+  flutter_secure_storage: ^11.2.0
+  flutter_local_notifications: ^22.3.2
+  timezone: ^0.11.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+flutter:
+  uses-material-design: true

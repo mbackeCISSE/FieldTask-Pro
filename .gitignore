@@ -1,0 +1,27 @@
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+/build/
+/coverage/
+/android/.gradle/
+/android/local.properties
+/android/app/*.iml
+*.iml
+.idea/
+/backend/target/
+*.jks
+key.properties
+
+# Local build and workspace artifacts
+/.flutter-tmp/
+/tmp/
+/work/
+/output/
+/uploads/
+/.env
+/.env.*
+!*.env.example
+*.log
+.DS_Store

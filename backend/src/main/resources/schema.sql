@@ -1,0 +1,47 @@
+CREATE TABLE IF NOT EXISTS users (
+  id VARCHAR(64) PRIMARY KEY,
+  email VARCHAR(254) NOT NULL UNIQUE,
+  password_salt VARCHAR(64) NOT NULL,
+  password_hash VARCHAR(128) NOT NULL,
+  name VARCHAR(255) NOT NULL,
+  role VARCHAR(64) NOT NULL,
+  company VARCHAR(255) NOT NULL,
+  enabled BOOLEAN NOT NULL DEFAULT TRUE,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS auth_sessions (
+  token_hash CHAR(64) PRIMARY KEY,
+  technician_id VARCHAR(64) NOT NULL,
+  expires_at TIMESTAMP NOT NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  CONSTRAINT fk_auth_session_user FOREIGN KEY (technician_id) REFERENCES users(id)
+);
+CREATE TABLE IF NOT EXISTS interventions (
+  id VARCHAR(64) PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  client VARCHAR(255) NOT NULL,
+  address VARCHAR(500) NOT NULL,
+  description TEXT NOT NULL,
+  equipment VARCHAR(255) NOT NULL,
+  priority VARCHAR(32) NOT NULL,
+  status VARCHAR(32) NOT NULL,
+  due_at TIMESTAMP NOT NULL,
+  latitude DOUBLE NOT NULL,
+  longitude DOUBLE NOT NULL,
+  technician_id VARCHAR(64) NOT NULL DEFAULT 'techfix-demo-1',
+  notes TEXT NULL,
+  updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS sync_operations (
+  operation_id VARCHAR(128) PRIMARY KEY,
+  result_json TEXT NOT NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS attachments (
+  id VARCHAR(128) PRIMARY KEY,
+  intervention_id VARCHAR(64) NOT NULL,
+  kind VARCHAR(32) NOT NULL,
+  stored_name VARCHAR(255) NOT NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  CONSTRAINT fk_attachments_intervention FOREIGN KEY (intervention_id) REFERENCES interventions(id)
+);
