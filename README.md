@@ -6,24 +6,34 @@ FieldTask Pro est une application Flutter Android de suivi des interventions ter
 
 ## Captures de l’application
 
-Les captures ci-dessous montrent les principaux écrans. Les fichiers originaux fournis pour le projet sont conservés dans [`assets/screenshots/`](assets/screenshots/).
+Les captures sont présentées en vignettes pour garder le README compact. Cliquez sur une image pour l’ouvrir en pleine taille. Les originaux sont conservés dans [`assets/screenshots/`](assets/screenshots/).
 
-| Écran | Aperçu |
-|---|---|
-| Connexion | ![Écran de connexion](assets/screenshots/01-connexion.png) |
-| Tableau de bord hors ligne | ![Tableau de bord hors ligne](assets/screenshots/02-tableau-de-bord-hors-ligne.png) |
-| Tableau de bord connecté | ![Tableau de bord connecté](assets/screenshots/03-tableau-de-bord-en-ligne.png) |
-| Carte des interventions | ![Carte des interventions](assets/screenshots/04-carte.png) |
-| Profil technicien | ![Profil technicien](assets/screenshots/05-profil-technicien.png) |
-| Rappels programmés | ![Page Notifications](assets/screenshots/06-notifications.png) |
-| Intervention affectée et rappel | ![Intervention affectée et rappel](assets/screenshots/07-intervention-assignee-et-rappel.png) |
-| Détail d’une intervention | ![Détail d’une intervention](assets/screenshots/08-detail-intervention.png) |
-| Actions de terrain | ![Actions de terrain](assets/screenshots/09-actions-de-terrain.png) |
-| Signature du client | ![Capture de signature](assets/screenshots/10-signature-client.png) |
-| Pièces jointes hors ligne | ![Pièces jointes conservées hors ligne](assets/screenshots/11-pieces-jointes-hors-ligne.png) |
-| Intervention terminée | ![Intervention terminée](assets/screenshots/12-intervention-terminee.png) |
-| Tableau de bord après intervention | ![Tableau de bord après intervention](assets/screenshots/13-tableau-de-bord-terminee.png) |
-| Accès au détail depuis un marqueur | ![Détail ouvert depuis un marqueur](assets/screenshots/14-detail-depuis-marqueur.png) |
+<table>
+  <tr>
+    <td align="center"><a href="assets/screenshots/01-connexion.png"><img src="assets/screenshots/01-connexion.png" width="140" alt="Connexion"></a><br>Connexion</td>
+    <td align="center"><a href="assets/screenshots/02-tableau-de-bord-hors-ligne.png"><img src="assets/screenshots/02-tableau-de-bord-hors-ligne.png" width="140" alt="Tableau de bord hors ligne"></a><br>Tableau de bord hors ligne</td>
+    <td align="center"><a href="assets/screenshots/03-tableau-de-bord-en-ligne.png"><img src="assets/screenshots/03-tableau-de-bord-en-ligne.png" width="140" alt="Tableau de bord connecté"></a><br>Tableau de bord connecté</td>
+    <td align="center"><a href="assets/screenshots/04-carte.png"><img src="assets/screenshots/04-carte.png" width="140" alt="Carte des interventions"></a><br>Carte des interventions</td>
+  </tr>
+  <tr>
+    <td align="center"><a href="assets/screenshots/05-profil-technicien.png"><img src="assets/screenshots/05-profil-technicien.png" width="140" alt="Profil technicien"></a><br>Profil technicien</td>
+    <td align="center"><a href="assets/screenshots/06-notifications.png"><img src="assets/screenshots/06-notifications.png" width="140" alt="Notifications"></a><br>Rappels programmés</td>
+    <td align="center"><a href="assets/screenshots/07-intervention-assignee-et-rappel.png"><img src="assets/screenshots/07-intervention-assignee-et-rappel.png" width="140" alt="Intervention affectée et rappel"></a><br>Intervention affectée et rappel</td>
+    <td align="center"><a href="assets/screenshots/08-detail-intervention.png"><img src="assets/screenshots/08-detail-intervention.png" width="140" alt="Détail d’une intervention"></a><br>Détail d’une intervention</td>
+  </tr>
+  <tr>
+    <td align="center"><a href="assets/screenshots/09-actions-de-terrain.png"><img src="assets/screenshots/09-actions-de-terrain.png" width="140" alt="Actions de terrain"></a><br>Actions de terrain</td>
+    <td align="center"><a href="assets/screenshots/10-signature-client.png"><img src="assets/screenshots/10-signature-client.png" width="140" alt="Signature du client"></a><br>Signature du client</td>
+    <td align="center"><a href="assets/screenshots/11-pieces-jointes-hors-ligne.png"><img src="assets/screenshots/11-pieces-jointes-hors-ligne.png" width="140" alt="Pièces jointes hors ligne"></a><br>Pièces jointes hors ligne</td>
+    <td align="center"><a href="assets/screenshots/12-intervention-terminee.png"><img src="assets/screenshots/12-intervention-terminee.png" width="140" alt="Intervention terminée"></a><br>Intervention terminée</td>
+  </tr>
+  <tr>
+    <td align="center"><a href="assets/screenshots/13-tableau-de-bord-terminee.png"><img src="assets/screenshots/13-tableau-de-bord-terminee.png" width="140" alt="Tableau de bord après intervention"></a><br>Tableau de bord après intervention</td>
+    <td align="center"><a href="assets/screenshots/14-detail-depuis-marqueur.png"><img src="assets/screenshots/14-detail-depuis-marqueur.png" width="140" alt="Détail ouvert depuis un marqueur"></a><br>Accès au détail depuis un marqueur</td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
 
 ## Fonctionnalités
 
@@ -67,7 +77,7 @@ assets/screenshots/              # Captures d’écran intégrées à ce README
 
 ## Démarrage local
 
-### 1. Démarrer l’API et la base de données
+### 1. Démarrer l’aPI et la base de données
 
 Installer et démarrer Docker Desktop, puis lancer à la racine du projet :
 
