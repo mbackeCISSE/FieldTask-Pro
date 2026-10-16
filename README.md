@@ -77,7 +77,7 @@ assets/screenshots/              # Captures d’écran intégrées à ce README
 
 ## Démarrage local
 
-### 1. Démarrer l’aPI et la base de données
+### 1. Démarrer Spring Boot et MySQL
 
 Installer et démarrer Docker Desktop, puis lancer à la racine du projet :
 
